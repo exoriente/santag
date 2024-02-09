@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "santag"
+version = "0.1.0"
+description = "A tool to add diacritics and formatting to a cuneiform transcription"
+authors = ["ExOriente <oosten@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyqt5 = "^5.15.10"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.2.1"
+mypy = "^1.8.0"
+pyqt5-stubs = "^5.15.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
